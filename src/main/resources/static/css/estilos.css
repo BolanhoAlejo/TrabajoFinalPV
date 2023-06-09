@@ -4,3 +4,130 @@
 	padding: 0px;
 	
 }
+body {
+  background-color: rgb(15, 189, 240);
+}
+body {
+  color: white;
+}
+
+* {
+  font-weight: bold;
+}
+#container {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  z-index: -1; /* Establecer un valor de z-index para el contenedor */
+}
+
+.moving-object {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200px; /* Ajusta el ancho de la imagen según tus necesidades */
+  height: 200px; /* Ajusta la altura de la imagen según tus necesidades */
+  animation: moveObject 15s infinite linear;
+  z-index: -1; /* Establecer un valor de z-index para el contenedor */
+}
+
+.object-1 {
+  top: 30px;
+  left: 1300px;
+  animation-name: moveObject1;
+}
+
+.object-2 {
+  top: 150px;
+  left: -50px;
+  animation-name: moveObject2;
+}
+
+.object-3 {
+  top: 280px;
+  left: 1500px;
+  animation-name: moveObject3;
+}
+
+.object-4 {
+  top: 400px;
+  left: -200px;
+  animation-name: moveObject4;
+}
+
+.object-5 {
+  top: 470px;
+  left: 540px;
+  width: 450px; /* Ajusta el ancho del objeto 5 */
+  height: 450px; /* Ajusta la altura del objeto 5 */
+  animation-name: rotateObject5;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  transform-origin: center;
+  z-index: -2;
+}
+
+@keyframes moveObject1 {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(calc(-800% - 100px)); /* Cambia el signo para invertir la dirección */
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes moveObject2 {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(calc(800% - 100px)); /* Cambia el signo para invertir la dirección */
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes moveObject3 {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(calc(-800% - 100px));
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes moveObject4 {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(calc(800% - 100px));
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes rotateObject5 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+
+
+
+

@@ -88,4 +88,23 @@ public class ProductoController {
 	    return listadoFinal;
 	}
 	
+    @GetMapping("/indexin")
+    public String mostrarIndexin() {
+        //ModelAndView modelAndView = new ModelAndView("indexin");
+        return "indexin.html";
+    }
+    @GetMapping("/indexpr")
+    public String mostrarIndexpr() {
+        //ModelAndView modelAndView = new ModelAndView("indexin");
+        return "indexpr.html";
+   
+    }
+    @PostMapping("/indexin")
+    public ModelAndView procesarIndexin() {
+        // Lógica para procesar el formulario de indexin.html
+        ModelAndView modelAndView = new ModelAndView("resultadoIndexin");
+        modelAndView.addObject("mensaje", "Formulario indexin.html enviado correctamente");
+        return modelAndView;
+    }
+	
 }
