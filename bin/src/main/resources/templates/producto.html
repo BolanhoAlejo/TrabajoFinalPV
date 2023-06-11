@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Grupo2</title>
+
+<link th:rel="stylesheet" type="text/css" th:href="@{/webjars/bootstrap/5.2.3/css/bootstrap.min.css}">
+<!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous"> --> 
+
+</head>
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/">CENTRO DE REGISTRO</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="/">HOME</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/producto">MENU DE REGISTRO</a>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Busqueda..." aria-label="Search">
+        <button class="btn btn-dark" type="submit">Buscar</button>
+      </form>
+    </div>
+  </div>
+</nav>
+<body> <br>
+<div class="container">
+  <div class="row">
+    <div class="col-6">
+<pre>
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⣀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣼⠁⠘⢻⣆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⠇⠀⠀⣯⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣏⣀⣀⣤⣿⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡞⠀⠀⣹⣿⣿⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⠟⠀⢀⣼⣿⣳⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⡞⠁⠀⢀⣿⣿⣿⡏⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡏⡀⠀⢠⣜⣻⣿⢿⣀⣀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣾⠀⠉⠉⠛⢯⣿⣿⣾⡏⣀⠉⢉⡙⢒⠒⠒⠲⢤⣄⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣼⡏⠀⠀⠈⠷⣾⣿⡿⠿⢻⡿⠟⠛⠿⠿⠷⠖⠒⠂⠈⠳⣤⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣾⠁⠀⠀⠀⠀⠀⠸⣿⣿⣶⣾⣼⣄⠀⠀⠀⠀⣀⣀⣄⢴⣤⣿⡇
+⠀⠀⠀⣀⣀⣤⣤⣀⣤⣤⣤⣄⣠⢴⢟⠋⠀⠀⠀⠀⠀⣠⣼⣿⣿⣿⣿⠿⣿⣷⣾⣿⣿⣿⣿⣿⣿⣿⣿⡇
+⣰⣿⣿⣿⣿⣿⣿⡿⣿⣿⡟⠁⠀⢸⡗⣦⡐⢦⣤⣾⣿⣟⣻⣿⣿⣿⣿⡀⠀⠈⠉⠛⠟⠛⠟⠿⠿⣿⡋⠀
+⣿⣿⣟⣿⣿⣹⡛⠷⠿⣿⡇⠀⠀⠀⣿⡜⢷⣌⣿⣿⣟⣻⣿⣿⣿⣿⣿⣷⢾⣎⢀⣄⣠⣤⣀⣶⣾⣿⡇⠀
+⢿⣿⣿⣿⣿⣿⣳⠀⠀⠈⢡⠀⠀⣀⣨⣿⣆⠀⠙⠛⠛⠉⠛⠛⣻⣿⡟⠙⠿⠖⠭⢿⣷⣿⣿⣿⣿⡿⠁⠀
+⢸⣧⠙⠙⢼⣿⠄⠀⠀⠀⠸⡗⠚⠛⠋⣿⡟⠀⠀⠀⠀⠀⠀⠐⣿⣿⣿⣄⡀⠀⠀⠈⠉⠙⠛⣻⡇⠀⠀⠀
+⠀⣿⣦⠀⠀⢹⡄⠀⠀⠀⠀⢧⠀⠀⢀⣿⣷⣶⣄⡀⠀⠀⠀⠘⣿⣿⠛⢿⣿⣿⣷⣾⣠⣤⣶⣿⡇⠀⠀⠀
+⠀⠸⣿⣧⣁⢈⣇⠀⠀⠀⠀⠘⣧⣴⣽⣿⣿⣿⣟⣿⣦⣤⣤⣾⣿⣿⣄⠀⠈⠛⠿⢿⣿⣿⠿⠋⠀⠀⠀⠀
+⠀⠀⠈⣿⢸⣿⣿⡄⠀⠀⠀⠀⠸⣿⡯⠟⠛⠛⠉⠉⠛⠻⠿⣿⣿⣿⣿⣿⣷⣤⣤⣦⣼⡟⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⢹⣜⣿⡟⣷⣀⣠⣶⡶⠴⠟⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠉⠉⠛⠛⠛⠛⠋⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠈⢧⢻⣿⣹⣿⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠈⠛⠛⣁⡿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠉⠉⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+</pre>
+<h1 class="display-3">Rapido</h1>
+<h1 class="display-3">Eficiente</h1>
+<h1 class="display-3">Seguro</h1>
+    </div>
+    <div class="col-6">
+		      <form th:object="${producto}" th:action="@{/guardarProducto}" method="post">
+		<div class="form-group mb-3">
+			<div class="col-md-6">
+			<h1 class="display-6">Nombre</h1>
+			<input class="form-control" type="text" th:field="*{nombre}"></input> <br> 
+			</div>
+			<div class="col-md-4">
+			<h1 class="display-6">Codigo</h1>
+			<input class="form-control" type="number" th:field="*{codigo}"></input> <br> 
+			</div>
+			<div class="col-md-4">
+			<h1 class="display-6">Precio</h1>
+			<input class="form-control" type="number" th:field="*{precio}"> <br> 
+			</div>
+			<div class="col-md-4">
+			<h1 class="display-6">Stock</h1>
+			<input class="form-control" type="number" th:field="*{stock}"> <br>
+			</div>
+			<h1 class="display-6">Descripcion</h1>
+			<input class="form-control" type="text" th:field="*{descripcion}"> <br> 
+			<div class="col-md-6">
+			<h1 class="display-6">Precio Unitario</h1>
+			<input class="form-control" type="text" th:field="*{preciou}"> <br> 
+			</div>
+			  <div class="col-md-4">
+    <h1 class="display-6">Estado</h1>
+    <select id="inputState" class="form-select"> 
+      <option selected>Seleccionar...</option>
+      <option>Nuevo</option>
+      <option>Usado</option>
+    </select>  <br>
+  </div>
+				<input class="btn btn-dark" type="submit" value="INGRESAR">
+				</div>
+		</form>
+    </div>
+  </div>
+</div>
+	
+<script th:src="@{/webjars/bootstrap/5.2.3/js/bootstrap.min.js}" type="text/javascript"></script>
+<!--<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>  -->
+
+
+</body>
+</html>

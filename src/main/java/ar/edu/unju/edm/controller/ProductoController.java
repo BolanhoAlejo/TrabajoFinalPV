@@ -87,7 +87,30 @@ public class ProductoController {
 	    listadoFinal.addObject("listado", Productos.getListadoDeProductos());
 	    return listadoFinal;
 	}
-	
+    @GetMapping("/index")
+    public String mostrarIndex() {
+        //ModelAndView modelAndView = new ModelAndView("index");
+        return "index.html";
+   
+    }
+    @GetMapping("/indexnochepr")
+    public String mostrarIndexnochepr() {
+        //ModelAndView modelAndView = new ModelAndView("indexnochepr");
+        return "indexnochepr.html";
+   
+    }
+    @GetMapping("/indexnoche")
+    public String mostrarIndexnoche() {
+        //ModelAndView modelAndView = new ModelAndView("indexnoche");
+        return "indexnoche.html";
+   
+    }
+    @GetMapping("/indexnochein")
+    public String mostrarIndexnochein() {
+        //ModelAndView modelAndView = new ModelAndView("indexnochein");
+        return "indexnochein.html";
+   
+    }
     @GetMapping("/indexin")
     public String mostrarIndexin() {
         //ModelAndView modelAndView = new ModelAndView("indexin");
