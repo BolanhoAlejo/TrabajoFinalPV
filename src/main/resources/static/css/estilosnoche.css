@@ -5,7 +5,7 @@
 	
 }
 body {
-  background-color: rgb(15, 189, 240);
+  background-color: rgb(0, 0, 160);
 }
 body {
   color: white;
@@ -57,10 +57,10 @@ body {
 }
 
 .object-5 {
-  top: 580px;
-  left: 700px;
-  width: 450px; /* Ajusta el ancho del objeto 5 */
-  height: 450px; /* Ajusta la altura del objeto 5 */
+  top: 600px;
+  left: 750px;
+  width: 370px; /* Ajusta el ancho del objeto 5 */
+  height: 370px; /* Ajusta la altura del objeto 5 */
   animation-name: rotateObject5;
   animation-duration: 10s;
   animation-iteration-count: infinite;
@@ -79,6 +79,22 @@ body {
   animation-iteration-count: infinite;
   transform-origin: center;
   z-index: -2;
+}
+
+.object-7 {
+  top: 520px;
+  left: 250px;
+  width: 150px;
+  height: 150px;
+  animation: fadeObject7 4s infinite;
+}
+
+.object-8 {
+  top: 250px;
+  left: 1400px;
+  width: 150px;
+  height: 150px;
+  animation: fadeObject8 4s infinite;
 }
 
 @keyframes moveObject1 {
@@ -153,6 +169,20 @@ body {
   }
 }
 
+@keyframes fadeObject7 {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
 
-
-
+@keyframes fadeObject8 {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}

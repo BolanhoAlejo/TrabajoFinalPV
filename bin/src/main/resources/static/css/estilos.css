@@ -26,8 +26,8 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  width: 250px; /* Ajusta el ancho de la imagen según tus necesidades */
-  height: 250px; /* Ajusta la altura de la imagen según tus necesidades */
+  width: 200px; /* Ajusta el ancho de la imagen según tus necesidades */
+  height: 200px; /* Ajusta la altura de la imagen según tus necesidades */
   animation: moveObject 15s infinite linear;
   z-index: -1; /* Establecer un valor de z-index para el contenedor */
 }
@@ -40,7 +40,7 @@ body {
 
 .object-2 {
   top: 150px;
-  left: 30px;
+  left: -50px;
   animation-name: moveObject2;
 }
 
@@ -52,30 +52,17 @@ body {
 
 .object-4 {
   top: 400px;
-  left: -70px;
+  left: -200px;
   animation-name: moveObject4;
 }
 
 .object-5 {
-  top: 580px;
-  left: 700px;
+  top: 470px;
+  left: 540px;
   width: 450px; /* Ajusta el ancho del objeto 5 */
   height: 450px; /* Ajusta la altura del objeto 5 */
   animation-name: rotateObject5;
   animation-duration: 10s;
-  animation-iteration-count: infinite;
-  transform-origin: center;
-  z-index: -2;
-}
-
-.object-6 {
-  display: inline-block;
-  top: 750px;
-  left: 1700px;
-  width: 100px; /* Ajusta el ancho del objeto 6 */
-  height: 100px; /* Ajusta la altura del objeto 6 */
-  animation-name: rotateObject6;
-  animation-duration: 4s;
   animation-iteration-count: infinite;
   transform-origin: center;
   z-index: -2;
@@ -138,20 +125,8 @@ body {
   }
 }
 
-@keyframes rotateObject6 {
-  0% {
-    transform: rotate(0deg);
-  }
-  25% {
-    transform: rotate(25deg); /* Giro hacia la derecha */
-  }
-  75% {
-    transform: rotate(-25deg); /* Giro hacia la izquierda */
-  }
-  100% {
-    transform: rotate(0deg);
-  }
-}
+
+
 
 
 

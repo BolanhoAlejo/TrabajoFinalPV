@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<link th:rel="stylesheet" type="text/css"
+	th:href="@{/webjars/bootstrap/5.2.3/css/bootstrap.min.css}">
+
+
+</head>
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/">CENTRO DE REGISTRO</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="/">HOME</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/producto">MENU DE REGISTRO</a>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Busqueda..." aria-label="Search">
+        <button class="btn btn-dark" type="submit">Buscar</button>
+      </form>
+    </div>
+  </div>
+</nav>
+<body> <br>
+	<div class="container">
+		<div class="row">
+			<div class="card" style="width: 18rem;" th:each="prod:${listado}">
+				<img src="./img/producto.png" class="card-img-top" alt="...">
+				<div class="card-body">
+					<h5><center><p class="card-title" th:text="${prod.nombre}"></p></center></h5>
+					<p class="card-text" th:text="'$' + ${prod.precio}"></p>
+					<p class="card-text" th:text="'Stock: ' + ${prod.stock}"></p>
+					<p class="card-text" th:text="'Descripcion: ' + ${prod.descripcion}"></p>
+					<p class="card-text" th:text="'Precio Unitario: ' + ${prod.preciou}"></p>
+					<p class="card-text" th:text="'Cod. de Producto: ' + ${prod.codigo}"></p>
+					<a href="#" class="btn btn-primary">Agregar al Carrito</a>
+				</div>
+			</div>
+		</div> <br>
+<tbody>
+    <tr th:each="producto : ${listado}">
+        <td th:text="'Cod. de Producto: ' + ${producto.codigo}"></td>
+        <!-- Agrega la columna con los enlaces para editar y eliminar -->
+        <td>
+            <a th:href="@{/editarProducto/{codigo}(codigo=${producto.codigo})}" class="btn btn-primary">Editar</a>
+            <a th:href="@{/eliminarProducto/{codigo}(codigo=${producto.codigo})}" class="btn btn-danger">Eliminar</a>
+        </td>
+    </tr>
+</tbody>
+		<a class="btn btn-dark" href="/producto">Volver</a>
+	</div>
+	<script th:src="@{/webjars/bootstrap/5.2.3/js/bootstrap.min.js}"
+		type="text/javascript"></script>
+</body>
+</html>
