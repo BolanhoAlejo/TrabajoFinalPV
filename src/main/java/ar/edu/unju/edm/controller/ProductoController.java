@@ -158,8 +158,26 @@ public class ProductoController {
     }
     @GetMapping("/indexpr")
     public String mostrarIndexpr() {
-        //ModelAndView modelAndView = new ModelAndView("indexin");
+        //ModelAndView modelAndView = new ModelAndView("indexpr");
         return "indexpr.html";
+   
+    }
+    @GetMapping("/inicio")
+    public String mostrarinicio() {
+        //ModelAndView modelAndView = new ModelAndView("inicio");
+        return "inicio.html";
+   
+    }
+    @GetMapping("/perfile")
+    public String mostrarperfile() {
+        //ModelAndView modelAndView = new ModelAndView("perfile");
+        return "perfile.html";
+   
+    }
+    @GetMapping("/home")
+    public String mostrarhome() {
+        //ModelAndView modelAndView = new ModelAndView("home");
+        return "home.html";
    
     }
     @PostMapping("/indexin")
