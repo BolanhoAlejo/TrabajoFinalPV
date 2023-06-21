@@ -34,6 +34,46 @@ public class ProductoController {
 		return name;
 	}
 	
+	@GetMapping("/productoin")
+	public ModelAndView solicitarProductoin() {
+		Producto unProducto= new Producto();
+		ModelAndView name= new ModelAndView("productoin");
+		name.addObject("producto", unProducto);
+		return name;
+	}
+	
+	@GetMapping("/productopr")
+	public ModelAndView solicitarProductopr() {
+		Producto unProducto= new Producto();
+		ModelAndView name= new ModelAndView("productopr");
+		name.addObject("producto", unProducto);
+		return name;
+	}
+	
+	@GetMapping("/productonoche")
+	public ModelAndView solicitarProductonoche() {
+		Producto unProducto= new Producto();
+		ModelAndView name= new ModelAndView("productonoche");
+		name.addObject("producto", unProducto);
+		return name;
+	}
+	
+	@GetMapping("/productonochein")
+	public ModelAndView solicitarProductonochein() {
+		Producto unProducto= new Producto();
+		ModelAndView name= new ModelAndView("productonochein");
+		name.addObject("producto", unProducto);
+		return name;
+	}
+	
+	@GetMapping("/productonochepr")
+	public ModelAndView solicitarProductonochepr() {
+		Producto unProducto= new Producto();
+		ModelAndView name= new ModelAndView("productonochepr");
+		name.addObject("producto", unProducto);
+		return name;
+	}
+	
 	
 	@PostMapping("/guardarProducto")
 	public ModelAndView cargarProducto(@ModelAttribute("producto") Producto nuevoProducto, Productos listado) {
@@ -118,8 +158,26 @@ public class ProductoController {
     }
     @GetMapping("/indexpr")
     public String mostrarIndexpr() {
-        //ModelAndView modelAndView = new ModelAndView("indexin");
+        //ModelAndView modelAndView = new ModelAndView("indexpr");
         return "indexpr.html";
+   
+    }
+    @GetMapping("/inicio")
+    public String mostrarinicio() {
+        //ModelAndView modelAndView = new ModelAndView("inicio");
+        return "inicio.html";
+   
+    }
+    @GetMapping("/perfile")
+    public String mostrarperfile() {
+        //ModelAndView modelAndView = new ModelAndView("perfile");
+        return "perfile.html";
+   
+    }
+    @GetMapping("/home")
+    public String mostrarhome() {
+        //ModelAndView modelAndView = new ModelAndView("home");
+        return "home.html";
    
     }
     @PostMapping("/indexin")
