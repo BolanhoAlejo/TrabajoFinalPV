@@ -130,8 +130,8 @@ header {
 }
 
 .wrapper.active .form-box.register {
-	position: absolute;
-	transform: translateX(400px);
+	transition: transform .18s ease;
+	transform: translateX(0);
 }
 
 .wrapper .icon-close {

@@ -337,7 +337,92 @@
 	margin-left: 7px;
 }
 
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48;
+}
 
+.items {
+  grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+  --pico-block-spacing-vertical: calc(var(--pico-spacing) * 2);
+}
+
+.items h3,
+.items p {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.items footer {
+  display: grid;
+}
+
+.items footer button {
+  line-height: 1;
+}
+
+.price-container {
+  border-radius: 9999px;
+  background-color: rgb(187 247 208);
+  color: rgb(22 163 74);
+  font-weight: 700;
+  width: fit-content;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.controls-container {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.controls-container a {
+  margin: 5px;
+}
+
+.rate {
+    float: left;
+    height: 46px;
+    padding: 0 10px;
+}
+.rate:not(:checked) > input {
+    position:absolute;
+    top:-9999px;
+}
+.rate:not(:checked) > label {
+    float:right;
+    width:1em;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:30px;
+    color:#ccc;
+}
+.rate:not(:checked) > label:before {
+    content: '★ ';
+}
+.rate > input:checked ~ label {
+    color: #ffc700;    
+}
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+    color: #deb217;  
+}
+
+.rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label {
+    color: #c59b08;
+}
 
 
 
